@@ -8,7 +8,7 @@ and open the template in the editor.
 -->
 <html>
     <head>
-        <title>TODO supply a title</title>
+        <title>Products</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
@@ -16,6 +16,7 @@ and open the template in the editor.
     <!--jQuery library--> 
    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+   <link rel="stylesheet" type="text/css" href="index.css">
 
         <style>
             .container-decor{
@@ -30,7 +31,8 @@ and open the template in the editor.
             }
         </style>
     </head>
-    <body>
+    <body style="position: relative;padding-bottom: 60px;min-height: 100vh;">
+        <!-- Navigation bar -->
         <nav class="navbar navbar-expand-sm navbar-dark bg-dark navbar-fixed-top">
             <div class="container">
                 
@@ -239,14 +241,8 @@ around, we have all in one place.
                 
             </div>
         </div>
-            
+            </div>
         </div>
-        <footer>
-            <center>
-                <div class="container">
-                    <p>Copyright &copy; Lifestyle Store. All Rights Reserved | Contact Us: +919000000000</p>
-                </div>
-            </center>
-        </footer>
+        <?php include('includes/footer.php')?>
     </body>
 </html>

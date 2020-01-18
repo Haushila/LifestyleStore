@@ -16,7 +16,7 @@ header('location: products.php');
             }
         </style>
     </head>
-    <body style="height: 100%"> <!--
+    <body style="position: relative;padding-bottom: 60px;min-height: 100vh;"> <!--
         <div class="navbar navbar-inverse navbar-fixed-top">
             <div class="container">
                 <div class="navbar-header">

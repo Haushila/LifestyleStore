@@ -2,11 +2,10 @@
 //session_start();
 $name=$email=$contact=$city=$address=$password='';
 require ('includes/Common.php');
-if (isset($_SESSION['email'])) {
+?>
+<?php if (isset($_SESSION['email'])) {
 header('location: products.php');
 }
-?>
-<?php
 
 //require( 'includes/Common.php');
 $errors=array('name'=>'','email'=>'','pass'=>'','contact'=>'','city'=>'','address'=>'');
@@ -79,8 +78,6 @@ echo 'query error'.mysqli_error($con);
 }
 }
 }
-
-
 ?>
 <!DOCTYPE html>
 <!--
@@ -90,17 +87,18 @@ and open the template in the editor.
 -->
 <html>
     <head>
-        <title>TODO supply a title</title>
+        <title>Sign Up</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="index.css">
           <!--        Latest compiled and minified CSS -->
         <style>
-            .row_style{
-                margin-top: 100px;
-            }
+           /* .row_style{
+                margin-top: 50px;
+            }*/
         </style>
     </head>
-    <body>
+    <body style="position: relative;min-height: 100vh;padding-bottom: 60px;">
 
        <?php
 require ('includes/header.php');
@@ -108,7 +106,7 @@ require ('includes/header.php');
  
 <div class="container">       
             <div class="row row_style">
-                <div class="col-xs-6">
+                <div class="col-sm-4">
                     <form method="POST" action="signup.php">
                         <h1>Sign Up</h1>
                         <div class="form-group has-warning">

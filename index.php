@@ -10,7 +10,7 @@ To change this license header, choose License Headers in Project Properties.
 To change this template file, choose Tools | Templates
 and open the template in the editor.
 -->
-<html style="height: 100%">
+<html style="height: 100%;">
     <head>
         <title>LifeStyle Store</title>
         <meta charset="UTF-8">
@@ -18,7 +18,7 @@ and open the template in the editor.
        
         <link href="index.css" type="text/css" rel="stylesheet">
     </head>
-    <body style="height: 100%">
+    <body style="height: 100% ; position: relative;">
         <?php
              include( 'includes/header.php');
          ?>

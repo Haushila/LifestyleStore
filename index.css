@@ -30,10 +30,11 @@ max-width: 660px;
 footer
 {
     /*padding: 10px 0;*/
+    text-align: center;
     background-color: #101010;
     color: #9d9d9d;
-    position: relative;
-    margin-top: -100px;
+    position: absolute;
+    bottom: -60px;
     height: 100px;
     width: 100%;
     padding-top: 30px;
@@ -47,8 +48,8 @@ footer
 .container{
 	min-height: 100%;
 }
-.para
+/*.para
 {
 	text-align: center;
 }
-
+*/
